@@ -1,6 +1,19 @@
-<h2>realization home</h2>
-@foreach($items as $item)
-    <li>
-        <a href="{{route('realization.show.'.$item->id)}}">{{$item->title}}</a>
-    </li>
-@endforeach
+<div class="section techwix-brand-section techwix-brand-section-03 techwix-brand-section-04 section-padding">
+    <div class="container">
+        <div class="brand-wrapper text-center">
+            <div class="brand-active">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach($items as $item)
+                            @if($item->realization_category_id === 2)
+                            <div class="swiper-slide single-brand">
+                                <img src="{{ renderImage($item->galleryCover(), 150, 50, 'cover') }}" alt="Logotyp">
+                            </div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,7 +32,7 @@
 
                             {!! $form->renderFieldGroup('title') !!}
                             {!! $form->renderFieldGroup('lead') !!}
-                            {!! $form->renderFieldGroup('text') !!}
+{{--                            {!! $form->renderFieldGroup('text') !!}--}}
 
                             <hr>
                             {!! $form->renderFieldGroup('active') !!}

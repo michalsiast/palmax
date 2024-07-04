@@ -28,3 +28,11 @@ require_once('web_offer.php');
 require_once('web_offer_category.php');
 require_once('web_realization.php');
 require_once('web_realization_category.php');
+
+
+use App\Http\Controllers\PageController;
+
+Route::get('/page/{item}', [PageController::class, 'show']);
+
+
+

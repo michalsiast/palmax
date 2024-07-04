@@ -28,9 +28,8 @@ class RealizationCategoryForm extends Form
         ],
         'lead' => [
             'name' => 'lead',
-            'type' => 'textarea',
+            'type' => 'checkbox',
             'label' => 'admin.realization_category.lead',
-            'class' => 'ckeditorStandard',
             'rules' => [],
             'options' => [],
         ],

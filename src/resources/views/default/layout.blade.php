@@ -24,7 +24,8 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="{{asset('css/vendors/bootstrap.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/flaticon.css')}}">
@@ -34,7 +35,8 @@
     <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
-    <link rel="stylesheet" type="text/css" href="{{asset('css/slick/slick.css')}}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link href="{{asset('css/main.css')}}?version=1" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css" integrity="sha512-Ne9/ZPNVK3w3pBBX6xE86bNG295dJl4CHttrCp3WmxO+8NQ2Vn8FltNr6UsysA1vm7NE6hfCszbXe3D6FUNFsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -130,6 +132,36 @@
 
     @yield('content')
 
+    <div class="section techwix-cta-section-03">
+        <div class="container">
+            <!-- Cta Wrap Start -->
+            <div class="cta-wrap" style="background-image: url('{{asset('images/cta-bg2.png')}}');">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <!-- Cta Content Start -->
+                        <div class="cta-content">
+                            <div class="section-title">
+                                <h2 class="title white">Masz jakieś pytania?<br> Zadzwoń do nas</h2>
+                            </div>
+                        </div>
+                        <!-- Cta Content End -->
+                    </div>
+                    <div class="col-lg-5">
+                        <!-- Cta Button Start -->
+                        <div class="cta-info text-center">
+                            <div class="cta-icon">
+                                <img src="{{asset('images/cta-icon2.png')}}" alt="">
+                            </div>
+                            <p>Zadzwoń</p>
+                            <h3 class="number"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h3>
+                        </div>
+                        <!-- Cta Button End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Cta Wrap End -->
+        </div>
+    </div>
     <div class="section footer-section footer-section-03"
          style="background-image: url({{asset('images/bg/footer-bg.jpg')}});">
 
@@ -160,7 +192,7 @@
                                 <ul class="link">
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_address')}}  </a></li>
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></li>
-                                    <li><p>{{getConstField('bank_account_number')}}</p></li>
+                                    <li><p>Nr. konta: {{getConstField('bank_account_number')}}</p></li>
                                     <li><p>NIP: {{getConstField('company_nip')}}</p></li>
                                 </ul>
                             </div>
@@ -262,11 +294,12 @@
 <script src="{{asset('js/appear.min.js')}}"></script>
 <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
-
-<script src="{{asset('js/jquery-3.6.1.min.js')}}" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="{{asset('js/slick/slick.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="{{asset('js/aos.js')}}"></script>
-<script src="{{asset('js/simple-lightbox.jquery.min.js')}}" integrity="sha512-iJCzEG+s9LeaFYGzCbDInUbnF03KbE1QV1LM983AW5EHLxrWQTQaZvQfAQgLFgfgoyozb1fhzhe/0jjyZPYbmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="{{asset('js/frontend.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{asset('js/frontend.js')}}"></script>
 <script src="{{asset('js/main.min.js')}}"></script>
 
 @stack('scripts.body.bottom')

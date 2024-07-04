@@ -5,7 +5,7 @@
 {{--    <span style="display: block">{!! getAddressString() !!}</span>--}}
 {{--    <span style="display: block">{!! getFooterCreator() !!}</span>--}}
 
-{{--    @include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main']) --}}
+    @include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main'])
 
 <!-- About Start -->
 @if($fields->about_sub_title || $fields->about_title || $fields->about_content)
@@ -94,6 +94,26 @@
     </div>
 </div>
 <!-- Counter End -->
+<div class="section techwix-choose-us-section section-padding"
+     style="background-image: url({{asset('images/choose-us-bg3.jpg')}});">
+    <div class="container" style="max-width: 1450px;">
+        <!-- Choose Us Wrap Start -->
+        <div class="choose-us-wrap">
+            @if($fields->why_us_subtitle || $fields->why_us_title)
+                <div class="section-title text-center">
+                    <h3 class="sub-title">{{$fields->why_us_subtitle}}</h3>
+                    <h2 class="title">{{$fields->why_us_title}}</h2>
+                </div>
+            @endif
+            <div class="choose-us-content-wrap">
+                <div class="row row-cols-5">
+                    @include('default.article.home')
+                </div>
+            </div>
+        </div>
+        <!-- Choose Us Wrap End -->
+    </div>
+</div>
 <!-- Testimonial Start -->
 @if(!empty($fields->testimonial_subtitle) || !empty($fields->testimonial_title))
     <div class="section bg-cover techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding"
@@ -109,13 +129,32 @@
                         <h2 class="title">{{$fields->testimonial_title}}</h2>
                     @endif
                 </div>
-                <!-- Opinie -->
+                @if(!empty($reviews))
+                    <div class="testimonial-content-wrap-02">
+                        <div class="swiper-container testimonial-02-active">
+                            <div class="swiper-wrapper">
+                                @foreach($reviews as $review)
+                                <div class="swiper-slide">
+                                    <div class="single-testimonial-02">
+                                        <div class="testimonial-content">
+                                            <img src="{{asset('images/testi-icon.png')}}" alt="">
+                                            <p>{{ $review['text'] }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                @endif
             </div>
             <!-- Testimonial Wrap End -->
         </div>
     </div>
     <!-- Testimonial End -->
 @endif
-
-
+    @include('default.realization.home')
 @endsection

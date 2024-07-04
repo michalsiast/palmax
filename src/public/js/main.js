@@ -20,9 +20,9 @@
         } else {
             left.classList.remove("sticky");
         }
-    }    
+    }
 
-    
+
     /*--
         Menu parent Element Icon
     -----------------------------------*/
@@ -76,9 +76,9 @@
 		e.stopPropagation();
 	});
 
-        
+
     /*--
-        Mobile Menu 
+        Mobile Menu
     -----------------------------------*/
 
     /* Get Sibling */
@@ -148,7 +148,7 @@
 
 
     /*--
-		Offcanvas/Collapseable Menu 
+		Offcanvas/Collapseable Menu
 	-----------------------------------*/
     const offCanvasMenu = function (selector) {
 
@@ -198,23 +198,23 @@
     offCanvasMenu('.offcanvas-menu');
 
   /*--
-    magnificPopup video view 
-  -----------------------------------*/	
+    magnificPopup video view
+  -----------------------------------*/
 	$('.popup-video').magnificPopup({
 		type: 'iframe'
 	});
 
-  /*--    
+  /*--
       Counter Up
-  -----------------------------------*/  
+  -----------------------------------*/
 
     $('.counter').counterUp({
         delay: 10,
         time: 1500,
     });
 
-  
- 
+
+
     /*--
         Case Study Active
 	-----------------------------------*/
@@ -253,10 +253,10 @@
     var swiper = new Swiper('.testimonial-active', {
         slidesPerView: 1,
         spaceBetween: 30,
-        loop: true,        
+        loop: true,
     });
 
-    /*--    
+    /*--
         Testimonial Two Active
     -----------------------------------*/
     var swiper = new Swiper(".testimonial-02-active", {
@@ -286,15 +286,18 @@
           },
         },
     });
-  
 
-    /*--    
+
+    /*--
         Brand Active
     -----------------------------------*/
     var swiper = new Swiper(".brand-active .swiper-container", {
         slidesPerView: 5,
         spaceBetween: 30,
         loop: true,
+        autoplay: {
+            delay: 3000,
+        },
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -312,7 +315,7 @@
         },
     });
 
-    /*--    
+    /*--
         Testimonial Two Active
     -----------------------------------*/
     var swiper = new Swiper(".team-active", {
@@ -340,9 +343,9 @@
 
 
 
-    /*--    
+    /*--
       Progress Bar
-  -----------------------------------*/  
+  -----------------------------------*/
 
     if($('.progress-line').length) {
         $('.progress-line').appear(function(){
@@ -356,7 +359,7 @@
 
     /*--
         AOS
-    -----------------------------------*/   
+    -----------------------------------*/
     AOS.init({
         duration: 1200,
         once: true,

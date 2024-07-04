@@ -67,7 +67,7 @@ return [
 
 
     'article.singular' => 'Artykuł',
-    'article.plural' => 'Artykuły',
+    'article.plural' => 'Dlaczego my',
     'article.title' => 'Tytuł',
     'article.lead' => 'Wprowadzenie',
     'article.text' => 'Tekst',
@@ -133,14 +133,14 @@ return [
     'realization.singular' => 'Realizacja',
     'realization.plural' => 'Realizacje',
     'realization.title' => 'Tytuł',
-    'realization.lead' => 'Wprowadzenie',
+    'realization.lead' => 'Link (jeśli odnośnik do strony)',
     'realization.text' => 'Tekst',
 
 
     'realization_category.singular' => 'Kategoria realizacji',
     'realization_category.plural' => 'Kategorie realizacji',
     'realization_category.title' => 'Tytuł',
-    'realization_category.lead' => 'Wprowadzenie',
+    'realization_category.lead' => 'Czy jest to galeria?',
     'realization_category.text' => 'Tekst',
 
 

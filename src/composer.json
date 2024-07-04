@@ -19,7 +19,8 @@
         "intervention/image": "^2.5",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^3.0"
+        "laravel/ui": "^3.0",
+        "skagarwal/google-places-api": "^2.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

@@ -34,9 +34,10 @@ abstract class PageType extends Enum
             'statistics_header_3' => ['head', 'Nagłówek - Statystyki 3'],
             'statistics_number_3' => ['head', 'Liczba - Statystyki 3'],
             'statistics_unit_3' => ['head', 'Jednostka - Statystyki 3'],
-
             'testimonial_subtitle' => ['head', 'Podtytuł - Opinie'],
             'testimonial_title' => ['head', 'Tytuł - Opinie'],
+            'why_us_subtitle' => ['head', 'Podtytuł - Dlaczego my'],
+            'why_us_title' => ['head', 'Tytuł - Dlaczego my'],
         ]
     ];
     const PAGE_SHOW = [
@@ -57,7 +58,9 @@ abstract class PageType extends Enum
         'name' => 'about-us.show',
         'module' => false,
         'fields' => [
-            'text1' => ['text', '']
+            'sub_title_about' => ['head', 'Podtytuł - O firmie'],
+            'title_about' => ['head', 'Tytuł - O firmie'],
+            'description_about' => ['text', 'Opis - O firmie'],
         ]
     ];
     const CONTACT_SHOW = [

@@ -137,6 +137,7 @@
       <path value="$PROJECT_DIR$/src/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
       <path value="$PROJECT_DIR$/src/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/src/vendor/skagarwal/google-places-api" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

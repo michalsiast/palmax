@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Helpers\SeoHelper;
+use App\Services\GooglePlacesService;
+use Illuminate\Http\Request;
 use App\Models\Page;
 use App\Models\PageType;
-use Illuminate\Support\Facades\Log;
-use App\Services\GooglePlacesService;
+use App\Helpers\SeoHelper;
 
-class PageController extends Controller
+class GoogleReviewsController extends Controller
 {
     protected $googlePlacesService;
 
@@ -17,15 +17,22 @@ class PageController extends Controller
         $this->googlePlacesService = $googlePlacesService;
     }
 
-    public function show($item)
+    public function show(Page $item)
     {
+        $placeId = 'ChIJv5WKkub7PEcRlOJvEWkPF80'; // Zamień na swoje miejsce ID
+        try {
+            $reviews = $this->googlePlacesService->getReviews($placeId);
+        } catch (\Exception $e) {
+            $reviews = [];
+            \Log::error($e->getMessage());
+        }
+
         $type = PageType::getByName($item->type);
         $view = 'page.show';
 
         if($type['module']) {
             $view = str_replace('_', '.', $item->type);
-        }
-        else {
+        } else {
             $view = 'page.'.explode('.', $item->type)[0];
         }
 
@@ -33,15 +40,6 @@ class PageController extends Controller
         $gallery = $item->gallery;
 
         SeoHelper::setSeo($item->seo);
-
-        // Pobieranie wszystkich opinii z Google Reviews
-        $placeId = 'ChIJv5WKkub7PEcRlOJvEWkPF80';
-        try {
-            $reviews = $this->googlePlacesService->getAllReviews($placeId);
-        } catch (\Exception $e) {
-            $reviews = [];
-            Log::error($e->getMessage());
-        }
 
         return view('default.'.$view, [
             'page' => $item,
