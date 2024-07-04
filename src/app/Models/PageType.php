@@ -67,7 +67,8 @@ abstract class PageType extends Enum
         'name' => 'contact.show',
         'module' => false,
         'fields' => [
-            'text1' => ['text', '']
+            'sub_title_contact' => ['head', 'Podtytuł - Kontakt'],
+            'title_contact' => ['head', 'Tytuł - Kontakt'],
         ]
     ];
     const ARTICLE_INDEX = [

@@ -106,7 +106,7 @@
                 </div>
             @endif
             <div class="choose-us-content-wrap">
-                <div class="row row-cols-5">
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5">
                     @include('default.article.home')
                 </div>
             </div>
@@ -144,8 +144,6 @@
                                 </div>
                                 @endforeach
                             </div>
-
-                            <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>

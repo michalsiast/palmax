@@ -1,6 +1,6 @@
 @extends('default.layout')
 @section('content')
-    @include('default.subheader', ['pageName' => $page->name])
+    @include('default.subheader', ['pageName' => $page])
     <div class="section contact-info-section section-padding-02">
         <div class="container">
             <!-- Contact Info Wrap Start -->
@@ -11,26 +11,29 @@
                             <!--Single Contact Info Start -->
                             <div class="single-contact-info text-center">
                                 <div class="info-icon">
-                                    <img src="{{asset('images/info-1.png')}}" alt="">
+                                    <img src="{{asset('images/logo.png')}}" alt="">
                                 </div>
                                 <div class="info-content">
-                                    <h5 class="title">Telefon</h5>
-                                    <p><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></p>
+                                    <h5 class="title">Dane firmy</h5>
+                                    <p>{{getConstField('page_title')}} {{getConstField('company_name')}}</p>
+                                    <p>NIP: {{getConstField('company_nip')}}</p>
+                                    <p>Nr. konta: {{getConstField('bank_account_number')}}</p>
                                 </div>
                             </div>
                             <!--Single Contact Info End -->
                         </div>
                     @endif
-                    @if(getConstField('email'))
+                    @if(getConstField('email') || getConstField('phone'))
                         <div class="col-lg-4 col-sm-6">
                             <!--Single Contact Info Start -->
                             <div class="single-contact-info text-center">
                                 <div class="info-icon">
-                                    <img src="{{asset('images/info-2.png')}}" alt="">
+                                    <img src="{{asset('images/info-1.png')}}" alt="">
                                 </div>
                                 <div class="info-content">
-                                    <h5 class="title">E-mail</h5>
+                                    <h5 class="title">Dane kontaktowe</h5>
                                     <p><a href="mailto:{{getConstField('email')}}">{{getConstField('email')}}</a></p>
+                                    <p><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></p>
                                 </div>
                             </div>
                             <!--Single Contact Info End -->
@@ -45,8 +48,8 @@
                                 </div>
                                 <div class="info-content">
                                     <h5 class="title">Lokalizacja</h5>
-                                    <p>{{getConstField('company_address')}} <br>
-                                        {{getConstField('company_post_code')}} {{getConstField('company_city')}}</p>
+                                    <p><a href="{{getConstField('google_map')}}">{{getConstField('company_address')}} <br>
+                                            {{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></p>
                                 </div>
                             </div>
                             <!--Single Contact Info End -->
@@ -67,10 +70,16 @@
                         <!-- Contact Form Start -->
                         <div class="contact-form">
                             <div class="contact-form-wrap">
-                                <div class="heading-wrap text-center">
-                                    <span class="sub-title"> request a quote</span>
-                                    <h3 class="title">How May We Help You!</h3>
-                                </div>
+                                @if($fields->sub_title_contact || $fields->title_contact)
+                                    <div class="heading-wrap text-center">
+                                        @if($fields->sub_title_contact)
+                                            <span class="sub-title">{{$fields->sub_title_contact}}</span>
+                                        @endif
+                                        @if($fields->title_contact)
+                                            <h3 class="title">{{$fields->title_contact}}</h3>
+                                        @endif
+                                    </div>
+                                @endif
                                 @include('default.form.contact_form')
                             </div>
                         </div>

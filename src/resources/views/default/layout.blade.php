@@ -83,7 +83,7 @@
                     <!-- Header Social Start -->
                     <div class="header-social">
                         <ul>
-                            <li><a href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
                         </ul>
                     </div>
                     <!-- Header Social End -->
@@ -177,7 +177,7 @@
                             <p>{!! getConstField('company_description') !!}</p>
                             <div class="footer-social">
                                 <ul class="social">
-                                    <li><a href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="{{getConstField('facebook')}}" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                         </div>
