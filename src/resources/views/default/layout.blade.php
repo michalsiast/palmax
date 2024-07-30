@@ -84,7 +84,7 @@
                     <div class="header-social">
                         <ul>
                             <li><a target="_blank" href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
-                            <li style="margin-left: 20px;">@include('default._helpers.lang_nav')</li>
+{{--                            <li style="margin-left: 20px;">@include('default._helpers.lang_nav')</li>--}}
                         </ul>
                     </div>
                     <!-- Header Social End -->
