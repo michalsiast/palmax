@@ -7,7 +7,13 @@
                         @foreach($items as $item)
                             @if($item->realization_category_id === 2)
                             <div class="swiper-slide single-brand">
-                                <img src="{{ renderImage($item->galleryCover(), 150, 50, 'cover') }}" alt="Logotyp">
+                                @if(!empty($item->lead))
+                                    <a href="{!! $item->lead !!}" target="_blank">
+                                        <img src="{{ renderImage($item->galleryCover(), 150, 50, 'cover') }}" alt="Logotyp">
+                                    </a>
+                                @else()
+                                    <img src="{{ renderImage($item->galleryCover(), 150, 50, 'cover') }}" alt="Logotyp">
+                                @endif
                             </div>
                             @endif
                         @endforeach

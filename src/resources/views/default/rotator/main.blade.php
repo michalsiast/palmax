@@ -10,7 +10,7 @@
                         <h2 class="title" data-aos="fade-up" data-aos-delay="800">{{$item->name}}</h2>
                         <p data-aos="fade-up" data-aos-delay="900">{!! $item->text !!}</p>
                         <div class="hero-btn" data-aos="fade-up" data-aos-delay="1000">
-                            <a class="btn" style="margin-top: 0px" href="about.html">Zobacz więcej</a>
+                            <a class="btn" style="margin-top: 0px" href="{{route('realization_category.index')}}">Zobacz więcej</a>
                         </div>
                     </div>
                 </div>

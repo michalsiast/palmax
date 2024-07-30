@@ -54,12 +54,12 @@
 
 
     <!-- Preloader start -->
-{{--    <div id="preloader">--}}
-{{--        <div class="preloader">--}}
-{{--            <span></span>--}}
-{{--            <span></span>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <!-- Preloader End -->
 
     <!-- Header Start  -->
@@ -84,6 +84,7 @@
                     <div class="header-social">
                         <ul>
                             <li><a target="_blank" href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
+                            <li style="margin-left: 20px;">@include('default._helpers.lang_nav')</li>
                         </ul>
                     </div>
                     <!-- Header Social End -->
@@ -126,7 +127,6 @@
         </div>
         <!-- Offcanvas Body End -->
     </div>
-    {{--@include('default._helpers.lang_nav')--}}
 
 
 
@@ -294,8 +294,8 @@
 <script src="{{asset('js/appear.min.js')}}"></script>
 <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="{{asset('js/aos.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

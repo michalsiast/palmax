@@ -5,7 +5,7 @@
 {{--    <span style="display: block">{!! getAddressString() !!}</span>--}}
 {{--    <span style="display: block">{!! getFooterCreator() !!}</span>--}}
 
-    @include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main'])
+@include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main'])
 
 <!-- About Start -->
 @if($fields->about_sub_title || $fields->about_title || $fields->about_content)

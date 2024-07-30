@@ -2577,6 +2577,22 @@ textarea:-ms-input-placeholder {
 	margin-top: 90px;
 }
 
+.offer-page ul{
+    list-style: disc;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.offer-page ol{
+    list-style: decimal;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.offer-page ul li::marker{
+    color: #ff5538;
+}
+
 .owl-carousel .owl-stage-outer{
     overflow: visible!important;
 }
