@@ -5329,6 +5329,10 @@ textarea:-ms-input-placeholder {
 	color: #ff5538;
 }
 
+p{
+    font-size: 16px;
+}
+
 .single-counter-02 p {
 	font-size: 14px;
 	line-height: 30px;

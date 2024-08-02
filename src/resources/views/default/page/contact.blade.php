@@ -17,7 +17,7 @@
                                     <h5 class="title">Dane firmy</h5>
                                     <p>{{getConstField('page_title')}} {{getConstField('company_name')}}</p>
                                     <p>NIP: {{getConstField('company_nip')}}</p>
-                                    <p>Nr. konta: {{getConstField('bank_account_number')}}</p>
+                                    <p>Nr. konta: <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p>
                                 </div>
                             </div>
                             <!--Single Contact Info End -->

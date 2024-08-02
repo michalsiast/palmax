@@ -192,7 +192,7 @@
                                 <ul class="link">
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_address')}}  </a></li>
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></li>
-                                    <li><p>Nr. konta: {{getConstField('bank_account_number')}}</p></li>
+                                    <li><p>Nr. konta: <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p></li>
                                     <li><p>NIP: {{getConstField('company_nip')}}</p></li>
                                 </ul>
                             </div>
