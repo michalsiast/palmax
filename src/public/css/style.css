@@ -2578,12 +2578,22 @@ textarea:-ms-input-placeholder {
 }
 
 .offer-page ul{
+    font-size: 16px;
     list-style: disc;
     margin-left: 25px;
     margin-top: 10px;
 }
 
+.offer-page h4{
+    font-size: 22px;
+}
+
+.offer-page p{
+    font-size: 16px;
+}
+
 .offer-page ol{
+    font-size: 16px;
     list-style: decimal;
     margin-left: 25px;
     margin-top: 10px;
@@ -4858,7 +4868,7 @@ textarea:-ms-input-placeholder {
 	color: #0e0e0e;
 }
 
-.techwix-about-section-05 .about-content .text {
+.techwix-about-section-05 .about-content p {
 	font-size: 16px;
 	line-height: 30px;
 	margin-top: 30px;
@@ -5107,7 +5117,7 @@ textarea:-ms-input-placeholder {
 	padding-left: 90px;
 }
 
-.techwix-about-section-07 .about-content-wrap .text {
+.techwix-about-section-07 .about-content-wrap p {
 	font-size: 16px;
 	line-height: 30px;
 	margin-top: 25px;
@@ -5329,12 +5339,8 @@ textarea:-ms-input-placeholder {
 	color: #ff5538;
 }
 
-p{
-    font-size: 16px!important;
-}
-
 .single-counter-02 p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 30px;
 	text-transform: capitalize;
 	color: #ffffff;
@@ -9228,7 +9234,7 @@ p{
 }
 
 .footer-widget-about p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 30px;
 	color: #ffffff;
 	padding-right: 110px;
@@ -9285,7 +9291,7 @@ p{
 
 .widget-link .link li a,
 .widget-link .link li p {
-	font-size: 14px;
+	font-size: 16px;
 	color: #c4c5c7;
 	transition: all 0.3s linear;
 }
