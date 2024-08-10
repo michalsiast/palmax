@@ -54,6 +54,41 @@
 @endif
 <!-- About End -->
 
+@if($fields->video_content)
+    <div class="section techwix-about-section-05 section-padding" style="padding-top: 0px">
+        <div class="container">
+            <!-- About Wrap Start -->
+            <div class="about-wrap">
+                <!-- About Content Wrap Start -->
+                <div class="about-content-wrap" style="padding-top: 0px">
+                    <div class="row">
+                        <div class="col-lg-6" style="display: flex; align-items: center">
+                            <!-- About Content Start -->
+                            @if($fields->video_content)
+                                <div class="about-content">
+                                    <p class="text">{!! $fields->video_content !!}</p>
+                                </div>
+                            @endif
+                            <!-- About Content End -->
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- About Image Wrap Start -->
+                            <div class="about-img-wrap">
+                                <div class="about-img about-img-big">
+                                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/LYtYO2ibab4?si=yY3hnFGSJdgMs5DK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!-- About Image Wrap End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- About Content Wrap End -->
+            </div>
+            <!-- About Wrap End -->
+        </div>
+    </div>
+@endif
+
 <!-- Counter Start -->
 <div class="section techwix-counter-section-03" style="background-image: url({{asset('images/counter-bg.jpg')}});">
     <div class="container">

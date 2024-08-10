@@ -23,6 +23,7 @@ abstract class PageType extends Enum
             'about_sub_title' => ['head', 'Nagłówek - O nas'],
             'about_title' => ['head', 'Tytuł - O nas'],
             'about_content' => ['text', 'Opis - O nas'],
+            'video_content' => ['text', 'Opis - Filmowanie'],
             'statistics_header_1' => ['head', 'Nagłówek - Statystyki 1'],
             'statistics_number_1' => ['head', 'Liczba - Statystyki 1'],
             'statistics_unit_1' => ['head', 'Jednostka - Statystyki 1'],
