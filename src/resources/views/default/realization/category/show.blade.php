@@ -1,5 +1,6 @@
 @extends('default.layout')
 @section('content')
+    
     @include('default.subheader', ['pageName' => $item, 'pageName2' => 'Nasze realizacje'])
 @if($item->lead === null || $item->lead === "0")
     <div class="section techwix-blog-grid-section section-padding">

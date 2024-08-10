@@ -14,10 +14,12 @@
                                     <img src="{{asset('images/logo.png')}}" alt="">
                                 </div>
                                 <div class="info-content">
-                                    <h5 class="title">Dane firmy</h5>
+                                    @if($fields->company_data_heading)
+                                        <h5 class="title">{{$fields->company_data_heading}}</h5>
+                                    @endif
                                     <p>{{getConstField('page_title')}} {{getConstField('company_name')}}</p>
-                                    <p>NIP: {{getConstField('company_nip')}}</p>
-                                    <p>Nr. konta: <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p>
+                                    <p>{{getConstField('company_data_heading_nip')}} {{getConstField('company_nip')}}</p>
+                                    <p>{{getConstField('company_data_heading_bank')}} <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p>
                                 </div>
                             </div>
                             <!--Single Contact Info End -->
@@ -31,7 +33,9 @@
                                     <img src="{{asset('images/info-1.png')}}" alt="">
                                 </div>
                                 <div class="info-content">
-                                    <h5 class="title">Dane kontaktowe</h5>
+                                    @if($fields->contact_details_heading)
+                                     <h5 class="title">{{$fields->contact_details_heading}}</h5>
+                                    @endif
                                     <p><a href="mailto:{{getConstField('email')}}">{{getConstField('email')}}</a></p>
                                     <p><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></p>
                                 </div>
@@ -47,7 +51,9 @@
                                     <img src="{{asset('images/info-3.png')}}" alt="">
                                 </div>
                                 <div class="info-content">
-                                    <h5 class="title">Lokalizacja</h5>
+                                    @if($fields->location_heading)
+                                        <h5 class="title">{{$fields->location_heading}}</h5>
+                                    @endif
                                     <p><a href="{{getConstField('google_map')}}">{{getConstField('company_address')}} <br>
                                             {{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></p>
                                 </div>

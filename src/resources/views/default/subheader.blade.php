@@ -45,7 +45,11 @@
                             <h2 class="title">{!! $pageName->name !!}</h2>
                         @endif
                         <ul class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="/">Strona główna</a></li>
+                            @if($currentLocale = app()->getLocale() === "en")
+                            <li class="breadcrumb-item"><a href="/en">Home</a></li>
+                            @else
+                                <li class="breadcrumb-item"><a href="/">Strona główna</a></li>
+                            @endif
                             @if(!empty($pageName2) && $pageName2 === 'Nasze realizacje')
                                 <li class="breadcrumb-item"><a href="{{route('realization_category.index')}}">{!! $pageName2 !!}</a></li>
                             @endif

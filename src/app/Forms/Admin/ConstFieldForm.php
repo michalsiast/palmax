@@ -133,7 +133,66 @@ class ConstFieldForm extends Form
             'label' => 'Instagram',
             'rules' => [],
         ],
-
+        'company_data_heading' => [
+            'name' => 'company_data_heading',
+            'type' => 'text',
+            'label' => 'Nagłówek Dane firmy',
+            'rules' => [],
+        ],
+        'company_data_heading_bank' => [
+            'name' => 'company_data_heading_bank',
+            'type' => 'text',
+            'label' => 'Nr. banku tekst',
+            'rules' => [],
+        ],
+        'company_data_heading_nip' => [
+            'name' => 'company_data_heading_nip',
+            'type' => 'text',
+            'label' => 'NIP tekst',
+            'rules' => [],
+        ],
+        'contact_person_heading' => [
+            'name' => 'contact_person_heading',
+            'type' => 'text',
+            'label' => 'Nagłówek Osoba kontaktowa',
+            'rules' => [],
+        ],
+        'contact_person_description' => [
+            'name' => 'contact_person_description',
+            'type' => 'text',
+            'label' => 'Opis Osoba kontaktowa',
+            'rules' => [],
+        ],
+        'contact_details_heading' => [
+            'name' => 'contact_details_heading',
+            'type' => 'text',
+            'label' => 'Nagłówek dane kontaktowe',
+            'rules' => [],
+        ],
+        'contact_banner_heading_1' => [
+            'name' => 'contact_banner_heading_1',
+            'type' => 'text',
+            'label' => 'Kontakt banner - Nagłówek 1',
+            'rules' => [],
+        ],
+        'contact_banner_heading_2' => [
+            'name' => 'contact_banner_heading_2',
+            'type' => 'text',
+            'label' => 'Kontakt banner - Nagłówek 2',
+            'rules' => [],
+        ],
+        'contact_banner_text_number' => [
+            'name' => 'contact_banner_text_number',
+            'type' => 'text',
+            'label' => 'Kontakt banner - Tekst przy numerze',
+            'rules' => [],
+        ],
+        'copyright' => [
+            'name' => 'copyright',
+            'type' => 'text',
+            'label' => 'Copyright',
+            'rules' => [],
+        ],
         'contact_form_rule' => [
             'name' => 'contact_form_rule',
             'type' => 'textarea',

@@ -84,7 +84,7 @@
                     <div class="header-social">
                         <ul>
                             <li><a target="_blank" href="{{getConstField('facebook')}}"><i class="fab fa-facebook-f"></i></a></li>
-{{--                            <li style="margin-left: 20px;">@include('default._helpers.lang_nav')</li>--}}
+                            <li style="margin-left: 20px;">@include('default._helpers.lang_nav')</li>
                         </ul>
                     </div>
                     <!-- Header Social End -->
@@ -141,7 +141,7 @@
                         <!-- Cta Content Start -->
                         <div class="cta-content">
                             <div class="section-title">
-                                <h2 class="title white">Masz jakieś pytania?<br> Zadzwoń do nas</h2>
+                                <h2 class="title white">{{getConstField('contact_banner_heading_1')}}<br> {{getConstField('contact_banner_heading_2')}}</h2>
                             </div>
                         </div>
                         <!-- Cta Content End -->
@@ -152,7 +152,7 @@
                             <div class="cta-icon">
                                 <img src="{{asset('images/cta-icon2.png')}}" alt="">
                             </div>
-                            <p>Zadzwoń</p>
+                            <p>{{getConstField('contact_banner_text_number')}}</p>
                             <h3 class="number"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h3>
                         </div>
                         <!-- Cta Button End -->
@@ -186,14 +186,14 @@
                     <div class="col-lg-3 col-sm-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget">
-                            <h4 class="footer-widget-title">Dane firmy</h4>
+                            <h4 class="footer-widget-title">{{getConstField('company_data_heading')}}</h4>
 
                             <div class="widget-link">
                                 <ul class="link">
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_address')}}  </a></li>
                                     <li><a href="{{getConstField('google_map')}}">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></li>
-                                    <li><p>Nr. konta: <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p></li>
-                                    <li><p>NIP: {{getConstField('company_nip')}}</p></li>
+                                    <li><p>{{getConstField('company_data_heading_bank')}} <span style="white-space:nowrap">{{getConstField('bank_account_number')}}</span></p></li>
+                                    <li><p>{{getConstField('company_data_heading_nip')}} {{getConstField('company_nip')}}</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget">
-                            <h4 class="footer-widget-title">Osoba kontaktowa</h4>
+                            <h4 class="footer-widget-title">{{getConstField('contact_person_heading')}}</h4>
 
                             <div class="widget-link">
                                 <ul class="link">
@@ -210,7 +210,7 @@
                                         <p>{{getConstField('company_name')}}</p>
                                     </li>
                                     <li>
-                                        <p>Wszystkie usterki techniczne stron prosimy zgłaszać na maila: <a href="mailto:{{getConstField('email')}}">{{getConstField('email')}}</a></p>
+                                        <p>{{getConstField('contact_person_description')}} <a href="mailto:{{getConstField('email')}}">{{getConstField('email')}}</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -220,7 +220,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget">
-                            <h4 class="footer-widget-title">Dane kontaktowe</h4>
+                            <h4 class="footer-widget-title">{{getConstField('contact_details_heading')}}</h4>
 
                             <div class="widget-info">
                                 <ul>
@@ -258,7 +258,7 @@
                         <div class="col-lg-12">
                             <!-- Copyright Text Start -->
                             <div class="copyright-text text-center">
-                                <p><?php echo date("Y") ?> &copy; Wszelkie prawa zastrzeżone. Strona stworzona przez: <a href="https://palmax.pl">Palmax</a></p>
+                                <p><?php echo date("Y") ?> &copy; {{getConstField('copyright')}} <a href="https://palmax.pl">Palmax</a></p>
                             </div>
                             <!-- Copyright Text End -->
                         </div>

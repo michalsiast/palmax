@@ -79,12 +79,30 @@ class PageSeeder extends Seeder
 //                'type' => 'article.index',
 //                'lang' => 'en',
 //            ],
-//            [
-//                'name' => 'About us',
-//                'title' => 'About us',
-//                'type' => 'about-us.show',
-//                'lang' => 'en',
-//            ],
+            [
+                'name' => 'About us',
+                'title' => 'About us',
+                'type' => 'about-us.show',
+                'lang' => 'en',
+            ],
+            [
+                'name' => 'Contact',
+                'title' => 'Contact',
+                'type' => 'contact.show',
+                'lang' => 'en',
+            ],
+            [
+                'name' => 'Offer',
+                'title' => 'Offer',
+                'type' => 'offer.index',
+                'lang' => 'en',
+            ],
+            [
+                'name' => 'Our projects',
+                'title' => 'Our projects',
+                'type' => 'realization_category.index',
+                'lang' => 'en',
+            ],
         ];
 
         foreach ($pages as $page) {

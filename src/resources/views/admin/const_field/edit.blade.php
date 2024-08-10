@@ -92,6 +92,55 @@
                 </div>
                 <div class="col-12">
                     <div class="card">
+                        <div class="card-header">
+                            Stopka
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('company_data_heading') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('company_data_heading_bank') !!}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('company_data_heading_nip') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_person_heading') !!}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_person_description') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_details_heading') !!}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('copyright') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_banner_heading_1') !!}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_banner_heading_2') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('contact_banner_text_number') !!}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
                         <div class="card-body">
                     {!! $form->renderFieldGroup('contact_form_rule') !!}
                         </div>
