@@ -262,6 +262,13 @@
                             </div>
                             <!-- Copyright Text End -->
                         </div>
+                        <div class="col-lg-12">
+                            <!-- Copyright Text Start -->
+                            <div class="copyright-text text-center">
+                                <p><a href="https://nowoczesnastrona.pl">nowoczesnastrona.pl</a> | <a href="https://nstechnology.pl">nstechnology.pl</a> | <a href="https://autocentrumlublin.com">autocentrumlublin.com</a> | <a href="https://uniter.pro">uniter.pro</a> | <a href="https://iberotur.pl">iberotur.pl</a> | <a href="https://lubiebieganie.pl">lubiebieganie.pl</a> | | <a href="https://lolapoppstudio.com.pl">lolapoppstudio.com.pl</a> | <a href="https://kes-industry.pl">kes-industry.pl</a> | <a href="https://stylespace.pl">stylespace.pl</a></p>
+                            </div>
+                            <!-- Copyright Text End -->
+                        </div>
                     </div>
                 </div>
             </div>
